@@ -25,6 +25,7 @@ class App extends Component {
     this.addCredit = this.addCredit.bind(this)
   }
 
+  /* Throws an error vova and I cant figure out. Uncomment and run.
   async componentDidMount(){
     let debits = await axios.get("https://moj-api.herokuapp.com/debits")
     let credits = await axios.get("https://moj-api.herokuapp.com/credits")
@@ -44,7 +45,7 @@ class App extends Component {
   const accountBalance = creditSum - debitSum;
   this.setState({debits, credits, accountBalance});
   }
-
+  */
 
 
 
