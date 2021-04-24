@@ -16,7 +16,7 @@ class Home extends Component {
         <br />
         <Link to="/Credits">Credits</Link>
         <br />
-        <Link to="Login/">Login</Link>
+        <Link to="/Login">Login</Link>
       </div>
     );
   }
