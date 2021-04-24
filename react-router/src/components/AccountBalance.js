@@ -1,3 +1,4 @@
+// src/components/AccountBalance.js
 import React, {Component} from 'react';
 
 class AccountBalance extends Component {
