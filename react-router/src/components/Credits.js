@@ -34,7 +34,7 @@ class Credits extends Component {
         table.push(
           <tr className="row" key={id}>
             <td className="text">Description: {description}</td>
-            <td className="text">Amount: {amount.toFixed(2)}</td>
+            <td className="text">Amount: {amount}</td>
             <td className="text">Date: {date}</td>
           </tr>
         );
