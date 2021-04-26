@@ -59,11 +59,16 @@ class Credits extends Component {
     let handleUpdate = this.props.handleUpdate;
     return (
       <div className="page">
-        <h3> Credits </h3>
+        <h1> Credits </h1>
         User: {this.props.user.userName}
+        <br />
+        <br />
         <AccountBalance accountBalance={this.props.accountBalance} />
+        <br />
         <Link to="/">Return to Home</Link>
-        <br></br>
+        <br />
+        <br />
+        <br />
         <div className="table">
           <table id="data">
             <tbody>
@@ -71,16 +76,21 @@ class Credits extends Component {
             </tbody>
           </table>
         </div>
+        <br />
+        <br />
+        <br />
         <form onSubmit={this.handleSubmit}>
           <div>
-            <label htmlFor="description">Enter a description</label>
+            <label htmlFor="description">Enter a description</label> &ensp;
             <input type="text" name="description" onChange={this.handleChange} value={this.state.credit.description} />
           </div>
+          <br />
           <div>
-            <label htmlFor="amount">Enter an amount</label>
+            <label htmlFor="amount">Enter an amount</label> &ensp;
             <input type="number" name="amount" onChange={this.handleChange} value={this.state.credit.amount} />
           </div>
-          <button>Add Credit</button>
+          <br />
+          <button className="button">Add Credit</button>
         </form>
       </div>
     );

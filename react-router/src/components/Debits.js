@@ -59,28 +59,36 @@ class Debits extends Component {
     let handleUpdate = this.props.handleUpdate;
     return (
       <div className="page">
-        <h3> Debits </h3>
+        <h1> Debits </h1>
         User: {this.props.user.userName}
+        <br />
+        <br />
         <AccountBalance accountBalance={this.props.accountBalance} />
+        <br />
         <Link to="/">Return to Home</Link>
-        <br></br>
-        <div className="table">
-          <table id="data">
+        <br />
+        <br />
+        <br />
+        <div>
+          <table className="table" id="data">
             <tbody>
               {this.makeDebit(this.props.apiData, this.props.found)}
             </tbody>
           </table>
         </div>
+        <br />
+        <br />
+        <br />
         <form onSubmit={this.handleSubmit}>
           <div>
-            <label htmlFor="description">Enter a description</label>
+            <label htmlFor="description">Enter a description</label> &ensp;
             <input type="text" name="description" onChange={this.handleChange} value={this.state.debit.description} />
           </div>
           <div>
-            <label htmlFor="amount">Enter an amount</label>
+            <label htmlFor="amount">Enter an amount</label> &ensp;
             <input type="number" name="amount" onChange={this.handleChange} value={this.state.debit.amount} />
           </div>
-          <button>Add Debit</button>
+          <button className="button">Add Debit</button>
         </form>
       </div>
     );
