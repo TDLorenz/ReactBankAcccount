@@ -1,0 +1,20 @@
+.page {
+    text-align: center;
+}
+
+.link {
+    font-size: 20px;
+}
+
+.table {
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: bold;
+}
+
+.button {
+    height:40px;
+    width:100px;
+    font-size: 17px;
+}
