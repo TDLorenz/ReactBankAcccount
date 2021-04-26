@@ -2,6 +2,7 @@
 import React, { Component } from 'react';
 import AccountBalance from './AccountBalance';
 import { Link } from 'react-router-dom';
+import "./Styles.css"
 
 class Debits extends Component {
 
@@ -30,7 +31,6 @@ class Debits extends Component {
         let id = debit.id
         let description = debit.description;
         let amount = Number(debit.amount).toFixed(2);
-        //let amount = debit.amount.toFixed(2);
         let date = debit.date
         table.push(
           <tr className="row" key={id}>
@@ -58,7 +58,7 @@ class Debits extends Component {
   render() {
     let handleUpdate = this.props.handleUpdate;
     return (
-      <div>
+      <div className="page">
         <h3> Debits </h3>
         User: {this.props.user.userName}
         <AccountBalance accountBalance={this.props.accountBalance} />

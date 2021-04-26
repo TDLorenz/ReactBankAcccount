@@ -2,6 +2,7 @@
 import React, { Component } from 'react';
 import AccountBalance from './AccountBalance';
 import { Link } from 'react-router-dom';
+import './Styles.css'
 
 class Credits extends Component {
 
@@ -57,7 +58,7 @@ class Credits extends Component {
   render() {
     let handleUpdate = this.props.handleUpdate;
     return (
-      <div>
+      <div className="page">
         <h3> Credits </h3>
         User: {this.props.user.userName}
         <AccountBalance accountBalance={this.props.accountBalance} />
