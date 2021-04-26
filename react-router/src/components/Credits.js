@@ -69,8 +69,8 @@ class Credits extends Component {
         <br />
         <br />
         <br />
-        <div className="table">
-          <table id="data">
+        <div className>
+          <table className="table" id="data">
             <tbody>
               {this.makeCredit(this.props.apiData, this.props.found)}
             </tbody>

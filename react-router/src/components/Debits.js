@@ -84,10 +84,12 @@ class Debits extends Component {
             <label htmlFor="description">Enter a description</label> &ensp;
             <input type="text" name="description" onChange={this.handleChange} value={this.state.debit.description} />
           </div>
+          <br />
           <div>
             <label htmlFor="amount">Enter an amount</label> &ensp;
             <input type="number" name="amount" onChange={this.handleChange} value={this.state.debit.amount} />
           </div>
+          <br />
           <button className="button">Add Debit</button>
         </form>
       </div>
